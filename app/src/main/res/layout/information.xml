@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="2.0">
+
+    <!--Head-->
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="5dip"
+    android:layout_weight="1.8">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="fill_parent"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rihanna"/>
+
+    </LinearLayout>
+
+        <!-- Company's Name-->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company's Name"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:layout_toEndOf="@+id/thumbnail" />
+
+        <!-- solo -->
+        <TextView
+            android:id="@+id/solo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:textColor="#343434"
+            android:textSize="15dip"
+            android:layout_marginTop="1dip"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:text="I m solo " />
+
+
+    </RelativeLayout>
+
+
+    <!--Body-->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="334dp"
+        android:layout_weight="0.2">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="334dp"
+        android:background="@drawable/list_selector"
+        android:orientation="vertical"
+        android:padding="5dip">
+
+        <!--  ListRow Left sied Thumbnail image -->
+        <LinearLayout android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/image_bg"
+            android:layout_marginRight="5dip">
+
+            <TextView
+                android:id="@+id/information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text = "Information :"/>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/h_call"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:text = "call Mobile :"/>
+
+        <TextView
+            android:id="@+id/h_no"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+
+            android:layout_below="@+id/h_call"
+            android:text = "N/A"/>
+
+        <TextView
+            android:id="@+id/m_call"
+            android:paddingTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/h_call"
+            android:text = "call Office :"/>
+
+        <TextView
+            android:id="@+id/m_no"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:layout_below="@+id/m_call"
+            android:text = "N/A"/>
+
+        <TextView
+            android:id="@+id/emailaddress"
+            android:paddingTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/m_call"
+            android:text = "Email:"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:layout_below="@+id/emailaddress"
+            android:text = "N/A"/>
+
+        <TextView
+            android:id="@+id/website"
+            android:paddingTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailaddress"
+            android:text = "Web Site"/>
+
+        <TextView
+            android:id="@+id/site"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+
+            android:layout_below="@+id/website"
+            android:text = "N/A"/>
+
+        <TextView
+            android:id="@+id/map"
+            android:paddingTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/website"
+            android:text = "Google Map"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_home"
+            android:src="@drawable/ic_action_call"
+            android:layout_alignBottom="@+id/h_no"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_mobile"
+            android:src="@drawable/ic_action_call"
+            android:layout_alignBottom="@+id/m_no"
+            android:layout_alignLeft="@+id/b_home"
+            android:layout_alignStart="@+id/b_home" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_email"
+            android:layout_alignBottom="@+id/email"
+            android:layout_alignRight="@+id/b_mobile"
+            android:layout_alignEnd="@+id/b_mobile"
+            android:src="@drawable/ic_action_email" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_web"
+            android:layout_alignBottom="@+id/site"
+            android:layout_alignRight="@+id/b_email"
+            android:layout_alignEnd="@+id/b_email"
+            android:src="@drawable/ic_action_web_site" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

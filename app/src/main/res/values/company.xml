@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Company">
+
+        <item>Aashish</item>
+        <item>Ntc</item>
+        <item>Ncell</item>
+        <item>Company4</item>
+        <item>Company5</item>
+        <item>Company6</item>
+        <item>Company7</item>
+        <item>Company8</item>
+        <item>Company9</item>
+        <item>Company10</item>
+        <item>Company11</item>
+        <item>Company12</item>
+        <item>Company13</item>
+        <item>Company14</item>
+        <item>Company15</item>
+        <item>Company16</item>
+        <item>Company17</item>
+        <item>Company18</item>
+        <item>Company19</item>
+
+
+    </string-array>
+</resources>
